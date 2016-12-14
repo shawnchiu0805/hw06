@@ -1,0 +1,137 @@
+h1{
+    font-family: Microsoft JhengHei;
+    color: darkblue;
+}
+
+.outer-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid navy;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    animation: 2s running-box infinite;
+}
+
+@keyframes running-box {
+    0% {
+        left: 0px;
+        top: 0px;
+        background: red;
+    }
+    25% {
+        left: 100px;
+        top: 0px;
+        background: gold;
+    }
+    50% {
+        left: 100px;
+        top: 100px;
+        background: lightblue;
+    }
+    75% {
+        left: 0px;
+        top: 100px;
+        background: lightgreen;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+        background: red;
+    }
+}
+
+
+/* For desktop: */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: lato;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    /*clear float: left & right*/
+    display: block;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 15px;
+
+}
+
+.bgTest {
+    background: wheat;
+    margin-bottom: 5px;
+}
+
+.bgTest:nth-of-type(4n+1) {
+    background: orange;
+}
+
+.bgTest:nth-of-type(4n+2) {
+    background: Ivory;
+}
+
+.bgTest:nth-of-type(4n+3) {
+    background: Gold;
+}
+
+
+
+
